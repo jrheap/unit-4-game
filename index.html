@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+        
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gem Game</title>
+    <title>M&M Collection Game!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
@@ -13,72 +14,97 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="assets/javascript/game.js"></script>
-
-
-
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    
+    
+    
 </head>
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Gem collection</h1>
-      <p class="lead"></p>
+<!-- <div class="jumbotron jumbotron-fluid bg-primary"> -->
+    <!-- <div class="container">
+        
+        <h1 class="display-4">M&M Collection</h1>
+        <p class="lead"></p>
     </div>
-  </div>
+</div> -->
 
-
+<div class="foo">
+    <div class="conatiner" id= "header">
+        <span class="letter" data-letter="M  "></span>
+        <span class="letter" data-letter="    "></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter="&"></span>
+        <span class="letter" data-letter=" "> </span>
+        <span class="letter" data-letter="M"></span>
+        <span class="letter" data-letter="  "></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter="C "></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter=" O"></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter="L "></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter="L "></span>
+        <span class="letter" data-letter=" "> </span>
+        <span class="letter" data-letter="E "></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter="C"></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter="T "></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter="I"></span>
+        <span class="letter" data-letter="O"></span>
+        <span class="letter" data-letter=" "></span>
+        <span class="letter" data-letter="N "></span>
+        
+        
+    </div>
+</div>
 
 <body>
-<div class="container">
-    <!-- <div class="col-md-1 wrapper">
+    
+    <div class="row" id="row1">
+        <!-- <div class="col-md-1 wrapper">
             <div class="card-body" style="background-color: orange;">
-                    This is some text within a card body.
-                  </div> -->
+                This is some text within a card body.
+            </div> -->
             
-    </div>
-
-    <div class="col-md-9s container">
-       <div class="row">
-            <div class="card mx-auto">
-                    <div class="card-body">
-                      <h3>Wins: <br> Loses:</h3>
-                    </div>
-            </div>
-
-       </div>
-        <div class="row">
-                <div class="card  mx-auto">
-                        <div class="card-body">
-                          <h4>Goal: <span id="goal"></span></h4>
-                          <h4>Current: <span id="current">0</span></h4>
-                        </div>
-                </div>
-        
-       </div>
-       <div class="row">
-            <div class="col-sm-3">
-                <a class="crystal" id="cry0" ><img src="http://via.placeholder.com/200x200"></a>
-
-
-            </div>
-            <div class="col-sm-3">
-                <a class="crystal" id="cry1"><img src="http://via.placeholder.com/200x200"></a>
-
-
-            </div>
-            <div class="col-sm-3">
-                <a class="crystal" id="cry2" ><img src="http://via.placeholder.com/200x200"></a>
-
-
-            </div>
-            <div class="col-sm-3">
-                <a class="crystal" id="cry3" ><img src="http://via.placeholder.com/200x200"></a>
-
-
-            </div>
-        
         </div>
+            <div class="container" >
+                <div class="card-body">
+                <h4>
+                    How to play:     
+                </h4>
+                <h5>Click on your favorite M&M Character! You'll notice the "Current score" will increase with each click. To win this game the current score must match your Goal score. <br> **HINT** Be careful each Character holds a different number! </h5> 
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
+                <div class="card border-light ">
+                    <div class="card-body" id="card1">
+                        <h3>Wins: <span id="wins"></span> <br> Loses: <span id="losses"></span> </h3>
+                    </div>
+                </div>
+                </div>
+                
+            <div class=" col-md-3">
+                <div class="card  ">
+                    <div class="card-body" id="card1">
+                        <h3>Goal: <span id="goal"></span></h3>
+                        <h3>Current: <span id="current">0</span></h3>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row" id="mm">
+                
+                
+            </div>
+           </div> 
+        </div>
+    </div> 
 
-    </div>
-</div> 
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
