@@ -36,8 +36,7 @@ $(document).ready(function() {
 
    // click on the picture and print its number on the sceen
        //we need some way to tell if an img was clicked on or not
-           //id on each cry img        
-       //somehow get our data-value attr
+        
    $('#mm').on("click", "#crystal" , function(event){
        event.preventDefault()
 
